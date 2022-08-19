@@ -33,10 +33,7 @@ jQuery(document).ready(function($){
     		//bind the animation to the window scroll event, arrows click and keyboard
 			if( hijacking == 'on' ) {
 				initHijacking();
-				// $(window).on('DOMMouseScroll mousewheel', scrollHijacking);
-				window.addEventListener('mousewheel', scrollHijacking, {passive: false});
-				window.addEventListener('DOMMouseScroll', scrollHijacking, {passive: false});
-
+				$(window).on('DOMMouseScroll mousewheel', scrollHijacking);
 			} else {
 				scrollAnimation();
 				$(window).on('scroll', scrollAnimation);
@@ -123,7 +120,7 @@ jQuery(document).ready(function($){
 
 	function scrollHijacking (event) {
 		// on mouse scroll - check if animate section
-        if (event.detail < 0 || event.wheelDelta > 0) { 
+        if (event.originalEvent.detail < 0 || event.originalEvent.wheelDelta > 0) { 
             delta--;
             ( Math.abs(delta) >= scrollThreshold) && prevSection();
         } else {

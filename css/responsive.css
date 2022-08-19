@@ -1,0 +1,19 @@
+/* 모바일 전용 */
+/* max-width 768px 대부분 커버 */
+@media (max-width: 768px) {
+    /* 100vh로 주면 화면이 넘어가지 않음 */
+    .cd-section {
+        height: auto;
+    }
+    
+    .cd-section>div {
+        height: auto;
+    }
+    
+    .content {
+        background-color: #ddd;
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+}
