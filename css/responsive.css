@@ -1,6 +1,11 @@
 /* 모바일 전용 */
 /* max-width 768px 대부분 커버 */
 @media (max-width: 768px) {
+
+    html {
+        /* 스크롤할떄 부드럽게 */
+        scroll-behavior: smooth;
+    }
     /* 100vh로 주면 화면이 넘어가지 않음 */
     .cd-section {
         height: auto;
@@ -16,4 +21,123 @@
         width: 100%;
         height: 100%;
     }
+
+    /* Header */
+    header {
+        transition: 0.5s;
+        z-index: 1;
+    }
+    header.active {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        
+    }
+
+
+    .menu {
+        display: block;
+    }
+    .slogan {
+        display: none;
+    }
+    .gnb {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -270px;
+        width: 250px;
+        height: 100vh;
+        box-shadow: -5px 0 10px rgb(0, 0, 0, 0.3);
+        transition: 0.5s;
+    }
+
+    .gnb.active {
+        right: 0;
+        transition: 0.5s;
+    }
+
+
+
+    .menu {
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    .menu a {
+        text-align: right;
+        display: block;
+        padding-right: 20px;
+        color: #000;
+        font-size: 20px;
+    }
+
+    /* Trigger */
+    .trigger {
+        display: block;
+        width: 24px;
+        height: 14px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+    }
+
+    .trigger span {
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #000;
+        transition: 0.5s;
+    }
+    .trigger span:nth-child(1) {
+        top: 0;
+    }
+    .trigger span:nth-child(2) {
+        top: 50%;
+        width: 80%;
+    }
+    .trigger span:nth-child(3) {
+        top: 100%;
+    }
+
+    .trigger.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .trigger.active span:nth-child(2) {
+        top: 50%;
+        width: 80%;
+        opacity: 0;
+    }
+    .trigger.active span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+
+    .gototop {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        border: 1px solid #fff;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        transform: translateY(30px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .gototop.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .btn-hiring {
+        right: 20px;
+        bottom: 20px;
+    }
+
 }
