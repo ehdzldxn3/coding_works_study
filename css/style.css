@@ -14,6 +14,7 @@
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 a {
@@ -173,6 +174,94 @@ header {
 }
 
 
+/* ############## */
+/* Section Plan */
+/* ############## */
+.plan-inner {
+    background-color: #1a1f24;
+    height: 100%;
+}
+.plan-feature {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.plan-feature > div {
+    height: 300px;
+    color: #bbb;
+}
+.plan-info {}
+.plan-info > div {
+    float: left;
+}
+.plan-heading {
+    width: 70%;
+    padding-right: 50px;
+    color: #fff;
+}
+
+.plan-heading h2{
+    width: 70%;
+    margin: 0;
+}
+.plan-heading p {
+    font-size: 16px;
+    line-height: 1.6em;
+    overflow: hidden;
+}
+.plan-photo {
+    width: 30%;
+}
+.plan-photo img {
+    height: 270px;
+}
+
+.plan-feature hr.bar {
+    background-color: dodgerblue;
+    display: inline-block;
+}
+.history-info {
+    
+}
+.history-info h2{
+    color: #fff;
+    margin: 0;
+}
+
+.history-slider div h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+}
+.history-slider div h4 span {
+    color: dodgerblue;
+}
+.history-slider div p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/* Slick 커스텀 history */
+.history-slider .slick-arrow {
+    display: none !important;
+}
+
+.history-slider .slick-dots li button:before {
+    color: #fff;
+    font-size: 40px;
+}
+
+.history-slider .slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.history-slider .slick-dots li {
+    margin: 0;
+}
+
 
 /* ############## */
 /* Section Awards */
@@ -204,11 +293,9 @@ header {
 
 
 .victory-jump {
-
     background-color: #fff;
     /* display: flex;
     justify-content: center; */
-
 }
 
 .victory-jump img {
@@ -248,6 +335,97 @@ hr.bar {
     color: #fff;
     border-color: transparent;
 }
+
+
+/* ############## */
+/* Section Project */
+/* ############## */
+.project-inner {
+    border: 1px solid #000;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.tabs {
+    height: 100%;
+    width: 300%;
+    transition: 0.5s;
+}
+.tabs > div{
+
+    height: 100%;
+    float: left;
+}
+.tab {
+    height: 100%;
+    width: 33.33333333%;
+
+}
+.tab > div {
+    height: 100%;
+    float: left;
+}
+.project-info {
+    width: 25%;
+}
+.project-photo {
+    width: 75%;
+}
+
+.project-inner input[name=tabmenu] {
+    display: none;
+}
+.btn {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 25%;
+    text-align: center;
+
+}
+.btn label {
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 8px;
+    position: relative;
+}
+.btn label:before {
+    content: '';
+    display: inline-block;
+    border: 1px solid transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transition: 0.3s;
+}
+.btn label:hover:before {
+    border: 1px solid #aaa;
+}
+.project-inner input[id=tab1]:checked ~ .btn label[for=tab1]:before,
+.project-inner input[id=tab2]:checked ~ .btn label[for=tab2]:before,
+.project-inner input[id=tab3]:checked ~ .btn label[for=tab3]:before
+{
+    border: 1px solid #000;
+}
+
+.project-inner input[id=tab1]:checked ~ .tabs {
+    margin-left: 0;
+}
+.project-inner input[id=tab2]:checked ~ .tabs {
+    margin-left: -100%;
+}
+.project-inner input[id=tab3]:checked ~ .tabs {
+    margin-left: -200%;
+}
+
+
+
 
 
 /* ############## */
@@ -409,6 +587,25 @@ hr.bar {
 }
 
 .contact-info {
+
 }
 
+.contact-info h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+}
 
+.contact-info ul li {
+    line-height: 1.5em;
+}
+
+.contact-info ul li:last-child {
+    color: #0088cc;
+}
+
+.contact-info p {
+    line-height: 1.5em;
+    
+}
