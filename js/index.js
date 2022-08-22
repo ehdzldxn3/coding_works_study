@@ -61,6 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesToScroll: 4,
     })
 
+    //slick project phoro
+    $('.project-photo').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade : true,
+        autoplay : true,
+        autoplaySpeed: 2000,
+        cssEase : 'linear'
+    })
+
 
 });
 
