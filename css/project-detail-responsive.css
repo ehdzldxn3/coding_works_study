@@ -1,0 +1,53 @@
+@media (max-width: 768px) {
+
+
+    project-main {
+        height: 60vh;
+    }
+    .project-info > div {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .center-child {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .center-child h2 {
+        font-size: 22px;
+    }
+
+    .center-child p {
+        font-size: 12px;
+    }
+
+    .project-contact ul {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+
+    .project-slogan p::before {
+        font-size: 100px;
+        top: -60px;
+        left: 5px;
+
+    }
+
+    .project-slogan p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .modal {
+        padding: 0 10px;
+    }
+
+
+
+
+}

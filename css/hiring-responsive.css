@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+    
+    .hiring-main {
+        height: 300px;
+    }
+    .header-inner {
+        height: 70px;
+    }
+    .hiring-heading {
+        width: 100%;
+        top: 60%;
+    }
+    .hiring-heading h1 {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    .hiring-info > div {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .center-child {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+
+    .hiring-info {
+        padding: 20px;
+    }
+
+
+    .hiring-slogan p::before {
+        font-size: 100px;
+        top: -50px;
+        left: -30px;
+
+    }
+
+    .hiring-contact ul {
+        display: block;
+        width: 100%;
+    }
+
+    .center-child h2 {
+        font-size: 22px;
+    }
+
+    .center-child p {
+        font-size: 12px;
+    }
+
+    .hiring-slogan {
+        font-size: 22px;
+        padding: 50px;
+    }
+
+
+    .hiring-slogan p{
+        width: 100%;
+        
+    }
+
+
+
+
+
+
+}

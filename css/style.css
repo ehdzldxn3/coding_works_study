@@ -392,7 +392,6 @@ header {
 /* ############## */
 .awards-inner {
     height: 100%;
-    border: 1px solid #ddd;
 }
 .awards-inner > div {
     float: left;
@@ -467,7 +466,7 @@ hr.bar {
 .project-inner {
     border: 1px solid #000;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .tabs {
     height: 100%;
@@ -475,9 +474,8 @@ hr.bar {
     transition: 0.5s;
 }
 .tabs > div{
-
-    height: 100%;
     float: left;
+    height: 100%;
 }
 .tab {
     height: 100%;
@@ -503,7 +501,6 @@ hr.bar {
     bottom: 30px;
     width: 25%;
     text-align: center;
-
 }
 .btn label {
     cursor: pointer;
@@ -630,24 +627,25 @@ hr.bar {
 .location-inner {
     background: url(/img/background-location.jpg) no-repeat center center;
     height: 100%;
-    Background-size: cover
+    Background-size: cover;
+    position: relative;
 }
 
 .location-inner:before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 .feature {
+    width: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    float: left;
     color: #bbb;
 }
 
@@ -694,6 +692,9 @@ hr.bar {
     font-size: 20px;
     margin: 0;
 }
+    /* ############## */
+    /* Section Contact */
+    /* ############## */
 
 .contact-inner {
     background-color: #fff;
@@ -804,3 +805,22 @@ hr.bar {
     line-height: 1.5em;
     
 }
+
+.featherlight .featherlight-content {
+    margin-left: 0%;
+    margin-right: 0%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    
+}
+.featherlight iframe {
+    width: 100%;
+    height: 100%;
+}
+.featherlight .featherlight-close-icon {
+    font-size: 40px;
+    top: 30px;
+    right: 70px;
+}
+

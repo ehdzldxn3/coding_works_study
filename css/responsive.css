@@ -1,5 +1,7 @@
 /* 모바일 전용 */
 /* max-width 768px 대부분 커버 */
+
+
 @media (max-width: 768px) {
 
     html {
@@ -11,7 +13,7 @@
         height: auto;
     }
     
-    .cd-section>div {
+    .cd-section > div {
         height: auto;
     }
     
@@ -113,7 +115,6 @@
         transform: rotate(-45deg);
     }
 
-
     .gototop {
         position: fixed;
         bottom: 20px;
@@ -139,5 +140,190 @@
         right: 20px;
         bottom: 20px;
     }
+
+
+
+    /* ############## */
+    /* Section Home */
+    /* ############## */
+    .home-inner {
+        height: 100vh;
+    }
+
+    .welcome-text {
+        transform: translate(-50%, -50%) scale(0.7);
+        width: 100%;
+    }
+    .home-heading {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-heading span {
+        font-size: 50px;
+    }
+
+    /* ############## */
+    /* Section Abouts */
+    /* ############## */
+    .about-inner {
+        height: auto;
+        padding: 20px;
+        background: #0dace3;
+    }
+
+    .about-items {
+        width: 100%;
+        position: static;
+        margin-left: 0;
+        transform: none;
+        text-align: center;
+    }
+    .item img {
+        float: none;
+    }
+
+    /* ############## */
+    /* Section Plan */
+    /* ############## */
+
+    .plan-inner {
+        height: auto;
+        padding: 20px;
+    }
+
+    .plan-feature {
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+    .plan-feature > div {
+        height: auto;
+    }
+    .plan-info {
+        margin-bottom: 40px;
+    }
+    .plan-info > div {
+        float: none;
+        width: 100%;
+    }
+    .plan-heading {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .plan-photo img {
+        width: 100%;
+    }
+
+    /* ############## */
+    /* Section Awards */
+    /* ############## */
+    .awards-inner {
+        height: auto;
+    }
+    .awards-inner > div {
+        float: none;
+        width: 100%;
+    }
+    .about-heading {
+        position: static;
+        transform: none;
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .victory-jump img {
+        position: static;
+        transform: none;        
+        padding: 20px;
+    }
+
+    .victory-jump {
+        text-align: center;
+    }
+
+    /* ############## */
+    /* Section Location */
+    /* ############## */
+    .location-inner {
+        height: auto;
+    }
+    .feature {
+        width: 100%;
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+      }
+    .feature > div {
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+    /* ############## */
+    /* Section Contact */
+    /* ############## */
+    .contact-inner {
+        height: auto;
+        border: none;
+    }
+
+    .contact-feature {
+      width: 100%;
+      transform: none;
+      position: static;
+    }      
+    .contact-feature > div {
+        float: none;
+        width: 100%;
+    }
+
+    /* ############## */
+    /* Section Project */
+    /* ############## */
+
+
+    .project-inner {
+        height: auto;
+        border: none;
+    }
+    .tab > div {
+        float: none;
+        width: 100%;
+    }
+    .view-project {
+        width: 100%;
+    }
+    .project-info {
+        padding: 20px;
+    }
+    .project-info p {
+        position: relative;
+    }
+    .detail div {
+        font-size: 13px;
+    }
+    .btn {
+        width: 100%;
+        bottom: 0;
+        background-color: #fff;
+    }
+
+
+    
+
+      
+
+
+    .featherlight .featherlight-close-icon {
+        font-size: 22px;
+        top: 40px;
+        right: 30px;
+    }
+
+
+
+
 
 }
